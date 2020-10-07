@@ -1,16 +1,18 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="dist/app.css">
-    <title>php-ajax-dischi</title>
-</head>
+<?php include "partials/head.php" ?>
+
+
 <body>
-<?php include "partials/db.php" ?>
+    <?php include "partials/header.php" ?>
+    <?php include "partials/db.php" ?>
     <div class="container">
         <?php foreach($database as $album) { ?>
-            <h4><?php echo $album["title"]; ?></h4>
+            <div class="album">
+                <img class="poster" src="<?php echo $album["poster"]; ?>" alt="">
+                <h4><?php echo $album["title"]; ?></h4>
+                <h5><?php echo $album["author"]; ?></h5>
+                <h5><?php echo $album["year"]; ?></h5>
+            </div>
+            
         <?php } ?>
     </div>
 </body>

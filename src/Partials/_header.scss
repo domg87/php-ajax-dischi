@@ -1,0 +1,18 @@
+header {
+    display: flex;
+    background-color: $color-header-album;
+
+    .header-bar {
+        width: 65%;
+        height: 70px;
+        margin: auto;
+    }
+
+    .logo {
+        padding: 15px;
+        width: 40px;
+
+        
+    }
+}
+
